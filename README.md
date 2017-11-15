@@ -24,7 +24,9 @@ This is just for publishing an ACME challenge from your GAE app.  If you want to
 2. Deploy the app to GAE.
 
 
-3. push your Acme secret to the app (using the nodejs tool as described in `push-acme-challenge-to-cload/README.md`)
+3. add your Acme challenge value to the data store.  There are two approaches:
+    * push it using our tool as described in `push-acme-challenge-to-cloud/README.md`.
+    * manually add it to the GAE datastore. In the Datastore web interface in the GCloud Dev Console, create a new entity of kind `AcmeChallenge`, with key=[your acme challenge key] and a single string property named `value`, with the value being the value of the ACME challenge.  (both key and value are given to you by certbot) 
 
 Your challenge should be available on: http://[your-app-domain]/.well-known/acme-challenge/[key]
 
