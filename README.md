@@ -66,7 +66,7 @@ Convert it to RSA PEM format that GAE likes. (described [here](https://cloud.goo
 openssl rsa -in privkey.pem -out rsa-privkey.pem
 ```
 
- 4. Then in [Dev Console --> App Engine --> Settings --> SSL Certificates](https://console.cloud.google.com/appengine/settings/certificates?project=worklytics-staging-eu&organizationId=496339493825), click "Upload a new certificate".
+ 4. Then in [Dev Console --> App Engine --> Settings --> SSL Certificates](https://console.cloud.google.com/appengine/settings/certificates), click "Upload a new certificate".
 
 Then upload or `cat + copy/paste` these into the form (latter is my preference): 
   * public key is the `fullchain.pem`
