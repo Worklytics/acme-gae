@@ -1,0 +1,18 @@
+{
+  "name": "acme-challenge-upload",
+  "version": "0.0.1",
+  "description": "cmd-line tool to push Acme Challenge entities to Cloud Datastore",
+  "main": "push-acme-challenge-to-cloud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erik Schultink <erik@worklytics.co>",
+  "license": "Apache-2.0",
+  "bin": {
+    "push-acme-challenge-to-cloud": "./push-acme-challenge-to-cloud.js"
+  },
+  "dependencies": {
+    "@google-cloud/datastore": "^1.1.0",
+    "commander": "^2.11.0"
+  }
+}
